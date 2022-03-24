@@ -8,7 +8,7 @@ const funcao_descriptografar = () => {
 
 const aplicarCifraCesar = (texto, chave, operacao) => {
     saida = ""
-    if (chave < 1 || chave > 94){
+    if (isNaN(chave) || chave < 1 || chave > 94){
         return "ERRO"
     }
     for (let letra of texto){
@@ -33,3 +33,7 @@ const aplicarCifraCesar = (texto, chave, operacao) => {
     }
         return saida
 }
+
+try {
+    module.exports = aplicarCifraCesar
+} catch {}

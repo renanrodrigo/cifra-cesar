@@ -6,7 +6,7 @@ const funcao_descriptografar = () => {
     htmlsaida.innerHTML = cifrar(htmltexto.value, Number(htmlchave.value), "D")
 }
 
-const cifrar = (texto, chave, operacao) => {
+const aplicarCifraCesar = (texto, chave, operacao) => {
     saida = ""
     if (chave < 1 || chave > 94){
         return "ERRO"

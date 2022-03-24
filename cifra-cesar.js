@@ -1,9 +1,9 @@
 const funcao_criptografar = () => {
-    htmlsaida.innerHTML = cifrar(htmltexto.value, Number(htmlchave.value), "C")
+    htmlsaida.innerHTML = aplicarCifraCesar(htmltexto.value, Number(htmlchave.value), "C")
 }
 
 const funcao_descriptografar = () => {
-    htmlsaida.innerHTML = cifrar(htmltexto.value, Number(htmlchave.value), "D")
+    htmlsaida.innerHTML = aplicarCifraCesar(htmltexto.value, Number(htmlchave.value), "D")
 }
 
 const aplicarCifraCesar = (texto, chave, operacao) => {

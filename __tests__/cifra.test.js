@@ -29,4 +29,7 @@ describe("Funcao de criptografia", () => {
         expect(aplicarCifraCesar("aaa", "X", "C")).toEqual("ERRO")
         expect(aplicarCifraCesar("aaa", "X", "D")).toEqual("ERRO")
     })
+    it("retorna corretamente caracteres <", () => {
+        expect(aplicarCifraCesar("funciona", 56, "C")).toEqual("?NG<BHG:")
+    })
 })
